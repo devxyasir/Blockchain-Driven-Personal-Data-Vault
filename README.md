@@ -52,9 +52,28 @@ npm install
 
 Create a `.env` file in the server directory with:
 ```
+# Server Configuration
 PORT=5000
+NODE_ENV=development
+
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_here
+
+# Email Configuration
+EMAIL_USER=your_email@gmail.com
+EMAIL_APP_PASSWORD=your_gmail_app_password
+ADMIN_EMAIL=devxsecure@gmail.com
+
+# MongoDB Configuration
 MONGODB_URI=mongodb://localhost:27017/blockchain-data-vault
-JWT_SECRET=your_secret_key
+
+# Email Validation
+ENABLE_SMTP_VERIFICATION=true
+
+# Blockchain Configuration
+ETH_NETWORK=goerli
+ETH_PRIVATE_KEY=your_ethereum_private_key_here
+
 ```
 
 Make sure MongoDB is running locally:
